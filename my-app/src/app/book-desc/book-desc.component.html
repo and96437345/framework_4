@@ -1,0 +1,19 @@
+<div class="book-desc__container">
+    <h2>Название книги:</h2>
+    <p>{{ bookTitle}}</p>
+    <h3>Год издания:</h3>
+    <p>{{ bookYear }}</p>
+    <h3>Количество страниц:</h3>
+    <p>{{ bookPages}}</p>
+    <h3>Издательство:</h3>
+    <p>{{ publishing | uppercase }}</p>
+    <h3>Автор:</h3>
+    <p>{{ bookAutor }}</p>
+    <div class="image">
+        <img src="{{ bookAutorImage }}" alt="">
+    </div>
+    <h3>Рецензия:</h3>
+    <p>{{ review }}</p>
+    <h3>Купить за:</h3>
+    <p>{{ bookPrice | currency:'RUB':'symbol-narrow' }}</p>
+</div>
